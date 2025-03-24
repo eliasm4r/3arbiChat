@@ -1,0 +1,6 @@
+url=jdbc:postgresql://psqlserv/but2
+username=eliasmarucaetu
+pswd=moi
+jdbcDriver=org.postgresql.Driver
+
+

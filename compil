@@ -1,0 +1,1 @@
+javac -d ../classes -sourcepath . MVC/controller/*.java MVC/model/dao/*.java MVC/model/pojo/*.java utils/*.java

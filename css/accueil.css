@@ -1,0 +1,264 @@
+body {
+    background-color: #1a1a2e;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #2c2c3e;
+    padding: 20px;
+    color: white;
+    overflow-y: auto;
+    border-right: 1px solid #444;
+    position: relative;
+    text-align: center;
+}
+
+.sidebar h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.fixed-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+}
+
+.fixed-buttons a {
+    display: block;
+    background-color: #ff95ca;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.fixed-buttons a:hover {
+    background-color: #6a0572;
+}
+
+.content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+}
+
+.content h2 {
+    margin: 0; /* Supprime toute marge autour du titre */
+    font-size: 2em; /* Agrandissement du texte */
+    color: #ff95ca; /* Couleur rose */
+}
+
+.message-area {
+    background-color: #3a3a4a;
+    padding: 20px;
+    margin-top: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-container {
+    display: flex; 
+    margin-top: 10px; 
+}
+
+.message-input {
+    flex: 3; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+
+.send-button {
+    flex: 1; 
+    background-color: #ff95ca;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.send-button:hover {
+    background-color: #6a0572;
+}
+
+#logo {
+    width: 300px;
+    height: auto;
+}
+
+#filList {
+    background-color: #4343fd;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Espace entre le message et le bouton */
+    align-items: center; /* Aligne verticalement au centre */
+    padding: 10px; /* Espacement autour du header */
+}
+
+.welcome-message {
+    color: #ff95ca; /* Couleur rose */
+    font-size: 2.5em; /* Augmentez la taille de la police */
+    font-weight: bold; /* Met le texte en gras */
+    margin: 0; /* Supprime toute marge */
+    padding: 5px 0; /* Espacement vertical */
+    margin-left: -10px; /* Décale légèrement vers la gauche */
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-profile-button {
+    background-color: #ff77a8; /* Couleur de fond rose clair */
+    color: white; /* Couleur du texte */
+    padding: 12px 24px; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 16px; /* Taille de la police */
+}
+
+.edit-profile-button:hover {
+    background-color: #ff4f7d; /* Couleur au survol plus foncée */
+}
+
+.logout-button {
+    background-color: #ff77a8; /* Couleur de fond rose clair */
+    color: white; /* Couleur du texte */
+    padding: 12px 24px; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 16px; /* Taille de la police */
+}
+
+.logout-button:hover {
+    background-color: #ff4f7d; /* Couleur au survol plus foncée */
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre l'image et le formulaire */
+    align-items: flex-start; /* Aligne les éléments en haut */
+}
+
+.profile-image {
+    width: 100px; /* Taille fixe du conteneur */
+    height: 100px; /* Taille fixe du conteneur */
+    border-radius: 50%; /* Arrondir le conteneur */
+    background-color: #ccc; /* Couleur de fond par défaut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Cache les débordements */
+}
+
+.profile-image img {
+    width: 105%; /* S'adapte à la taille du conteneur */
+    height: 105%; /* S'assure que l'image remplit le conteneur */
+    object-fit: cover; /* Couvre le conteneur sans déformer l'image */
+}
+
+h2 {
+    margin: 0; /* Supprime toute marge autour du titre */
+    font-size: 1.5em;
+}
+
+button {
+    background-color: #ff95ca; /* Couleur de fond rose clair */
+    color: white; /* Couleur du texte */
+    padding: 12px 24px; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+button:hover {
+    background-color: #6a0572; /* Couleur au survol plus foncée */
+}
+
+.file-upload {
+    display: flex;
+    flex-direction: column; /* Colonne pour l'image et le bouton */
+    align-items: center; /* Centre les éléments */
+}
+
+.file-upload input[type="file"] {
+    display: none; /* Cache le champ de fichier */
+}
+
+.file-upload label {
+    background-color: #ff95ca; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    margin-top: 10px; /* Espacement entre l'image et le bouton */
+}
+
+.submit-button {
+    font-weight: bold; /* Met le texte en gras */
+    background-color: #ff95ca; /* Couleur rose */
+    color: white; /* Couleur du texte */
+    padding: 12px 24px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    width: 100%; /* Prend toute la largeur */
+}
+
+.text-pink {
+    color: #ff95ca; /* Couleur rose */
+}
+
+.form-section {
+    flex-grow: 1; /* Permet à la section de formulaire de s'étendre */
+    padding: 20px; /* Espacement interne */
+}
+
+.file-upload-section {
+    padding: 20px; /* Espacement interne */
+}
+
+.separator {
+    width: 1px; /* Largeur de la ligne */
+    background-color: #444; /* Couleur de la ligne */
+    height: auto; /* Hauteur automatique */
+}
+
+.text-title {
+    font-size: 2em; /* Taille de police agrandie */
+    color: #ff95ca; /* Couleur rose */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Centrer le texte */
+}
